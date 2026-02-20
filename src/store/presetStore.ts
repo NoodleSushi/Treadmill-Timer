@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import type { Preset } from "../types";
 
-const STORAGE_KEY = "workout-timer-presets";
+const STORAGE_KEY = "treadmill-timer-presets";
 
 function loadPresets(): Preset[] {
   try {

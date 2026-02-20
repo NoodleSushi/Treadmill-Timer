@@ -44,7 +44,7 @@ function showDesktopNotification(
   next: TimerItem | null
 ) {
   // Play alarm sound
-  const audio = new Audio("/alarm.wav");
+  const audio = new Audio("./alarm.wav");
   audio.play().catch(() => {});
 
   if (!("Notification" in window) || Notification.permission !== "granted")
