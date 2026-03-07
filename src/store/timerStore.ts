@@ -128,7 +128,9 @@ export const useTimerStore = create<TimerState>()((set, get) => ({
 
       // Notify
       if (completedItem) {
-        showDesktopNotification(completedItem, nextItem);
+        try {
+          showDesktopNotification(completedItem, nextItem);
+        } catch {}
       }
 
       // Advance or stop
